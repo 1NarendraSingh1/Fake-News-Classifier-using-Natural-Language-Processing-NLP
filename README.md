@@ -1,4 +1,5 @@
 ## Hi there 👋
+This project will deep dive you into the NLP and LLMs tools and techniques that are most commanly used.
 ## Fake News Classifier
 ![image](https://github.com/user-attachments/assets/29307c54-7194-483b-ad4c-5bf0915c5a76)
 
