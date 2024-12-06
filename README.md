@@ -6,36 +6,6 @@ This project will deep dive you into the NLP and LLMs tools and techniques that 
 ## Project Overview
 The Fake News Classifier is a machine learning project aimed at identifying and categorizing news articles as either real or fake. By leveraging Natural Language Processing (NLP) techniques and machine learning models, the project preprocesses textual data and predicts its authenticity with high accuracy.
 
-## Project Objectives
-To preprocess news articles efficiently using NLP techniques.
-To classify news articles using a machine learning algorithm.
-To achieve high accuracy and provide insights through graphical analysis of the results.  
-Tech Stack
-Programming Language: Python
-Libraries/Frameworks:
-NLP Techniques: NLTK, Regular Expressions
-Data Preprocessing: TF-IDF, Bag of Words (BoW), Count Vectorizer
-Models: Porter Stemmer, Multinomial Naïve Bayes
-Data Preprocessing Steps
-Text Cleaning: Removed punctuations, special characters, and irrelevant data using regular expressions.
-Tokenization: Split text into individual words.
-Stemming: Reduced words to their root form using the Porter Stemmer.
-Lemmatization: Standardized words to their base dictionary forms.
-Feature Extraction:
-Implemented TF-IDF (Term Frequency-Inverse Document Frequency) for feature representation.
-Used Bag of Words (BoW) and Count Vectorizer with a maximum of 5000 features for text vectorization.
-Model Implementation
-Algorithm: Multinomial Naïve Bayes
-Dataset: Preprocessed news dataset with labeled data (real or fake).
-Performance: Achieved an accuracy of approximately 90% on the test data.
-Results and Visualization
-Graphs Included:
-Confusion Matrix: Showcases true positives, true negatives, false positives, and false negatives.
-Accuracy and Loss Curve: Tracks model performance during training.
-Feature Importance: Highlights the top keywords contributing to classification decisions.
-Example Graphs:
-Accuracy Curve: Displays the trend of training vs. validation accuracy over epochs.
-Word Frequency Bar Chart: Highlights the most frequent words in real and fake news categories.
 # 📰 Fake News Classifier  
 ![Python](https://img.shields.io/badge/python-3.x-blue.svg)  
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Enabled-green)  
@@ -80,11 +50,31 @@ Fake News Classifier is a **Machine Learning-based NLP project** designed to cla
 
 ## 📊 Visualizations  
 Here are some visual insights into the project's performance:
+A classification matrix, also known as a confusion matrix, is a table used to evaluate the performance of a classification model. It compares the predicted labels from the model with the actual labels (true values) from the data. The confusion matrix provides a summary of prediction results and is typically used for binary and multi-class classification problems.
 
-![Accuracy Graph](https://via.placeholder.com/800x400?text=Accuracy+Graph)  
-*Graph showcasing model accuracy over iterations.*
+For binary classification, the confusion matrix looks like this:
 
-![Feature Distribution](https://via.placeholder.com/800x400?text=Feature+Distribution)  
+Predicted Positive (1)	Predicted Negative (0)
+Actual Positive (1)	True Positive (TP)	False Negative (FN)
+Actual Negative (0)	False Positive (FP)	True Negative (TN)
+Where:
+
+True Positive (TP): The number of instances where the model correctly predicted the positive class.
+False Positive (FP): The number of instances where the model incorrectly predicted the positive class (Type I error).
+True Negative (TN): The number of instances where the model correctly predicted the negative class.
+False Negative (FN): The number of instances where the model incorrectly predicted the negative class (Type II error).
+From the confusion matrix, several important performance metrics can be derived, such as:
+
+![image](https://github.com/user-attachments/assets/64c58cf9-52c5-4072-9c5b-901d189b1ab7)
+
+1. *Matrix shows classification stats for PassiveModel*
+
+![image](https://github.com/user-attachments/assets/48079c39-c1c2-4387-b286-ada85bc70664)
+
+2. *Matrix shows classification stats for Multinomial Naive bayes Model*
+
+![image](https://github.com/user-attachments/assets/cb50d0e9-30bd-4f16-a3c7-febd0f773fbc)
+
 *Distribution of top features extracted from the dataset.*
 
 ---
