@@ -18,7 +18,7 @@ Fake News Classifier is a **Machine Learning-based NLP project** designed to cla
 ### 🌟 Key Features  
 - **Pre-processing:** NLTK, Regular Expressions, Stemming, Lemmatization, TF-IDF, Bag of Words (BoW), Count Vectorizer.  
 - **Models Used:**  
-  - Data Mining: **Porter Stemmer**  
+  - Data Mining: **Porter Stemmer**, **Count Vectorizer**
   - Classification: **Multinomial Naïve Bayes**  
 - **Dataset:** Custom or publicly available datasets with **5000 max features** for feature extraction.  
 - **Performance:** Achieves **90% accuracy** on the test set.  
